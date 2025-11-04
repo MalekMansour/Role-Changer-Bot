@@ -18,6 +18,7 @@ const GUILD_ID = process.env.GUILD_ID;
 
 // Roles users can choose from
 const ASSIGNABLE_ROLES = [
+  "1357511240792145930",
   "1435118930044784690",
   "1365150999366467585",
   "1365754781410394222",
@@ -27,7 +28,7 @@ const ASSIGNABLE_ROLES = [
   "1424989252470439996",
   "1425029865874395157",
   "1433702088730476637",
-  "1435139665115217920"
+  "1435139665115217920",
 ];
 
 const ALLOWED_TO_USE = [];
@@ -166,7 +167,6 @@ client.on("interactionCreate", async (interaction) => {
         });
       }
 
-      // Remove other assignable roles
       const toRemove = ASSIGNABLE_ROLES.filter(
         (r) => r !== selectedRoleId && member.roles.cache.has(r)
       );
@@ -175,7 +175,6 @@ client.on("interactionCreate", async (interaction) => {
         await member.roles.remove(toRemove, "Changing self role");
       }
 
-      // Add the new role
       if (!member.roles.cache.has(selectedRoleId)) {
         await member.roles.add(selectedRoleId, "Self role change");
       }
