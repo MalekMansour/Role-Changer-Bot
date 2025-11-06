@@ -52,7 +52,6 @@ const commands = [
 
 const rest = new REST({ version: "10" }).setToken(TOKEN);
 
-// ==== Register Slash Commands ====
 async function registerCommands() {
   try {
     if (GUILD_ID) {
