@@ -78,13 +78,11 @@ client.once("ready", () => {
 // ==== Interaction Handling ====
 client.on("interactionCreate", async (interaction) => {
   try {
-    // Handle slash command
     if (interaction.isChatInputCommand()) {
       if (
         interaction.commandName === "role" &&
         interaction.options.getSubcommand() === "change"
       ) {
-        // Check permission
         if (ALLOWED_TO_USE.length > 0) {
           const member = interaction.member;
           const allowed =
