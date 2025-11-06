@@ -96,7 +96,6 @@ client.on("interactionCreate", async (interaction) => {
           }
         }
 
-        // Build the select menu
         const options = ASSIGNABLE_ROLES.map((roleId) => {
           const role = interaction.guild.roles.cache.get(roleId);
           if (!role) return null;
