@@ -75,7 +75,6 @@ client.once("ready", () => {
   registerCommands();
 });
 
-// ==== Interaction Handling ====
 client.on("interactionCreate", async (interaction) => {
   try {
     if (interaction.isChatInputCommand()) {
