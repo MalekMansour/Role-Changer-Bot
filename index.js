@@ -128,7 +128,6 @@ client.on("interactionCreate", async (interaction) => {
       }
     }
 
-    // Handle role selection
     if (interaction.isStringSelectMenu() && interaction.customId === "role_select") {
       const selectedRoleId = interaction.values[0];
       const selectedRole = interaction.guild.roles.cache.get(selectedRoleId);
@@ -197,5 +196,4 @@ client.on("interactionCreate", async (interaction) => {
   }
 });
 
-// ==== Start bot ====
 client.login(TOKEN);
