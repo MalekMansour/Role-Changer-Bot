@@ -12,3 +12,21 @@ Only specific roles (defined by you) can be selected, and only certain users or 
 - Safe permission checks — the bot only changes roles it has access to.  
 
 ---
+ 💬 Command Usage
+
+Once the bot is running:
+
+Type /role change in your server.
+
+Select your desired role from the dropdown.
+
+The bot will remove your previous role and add the new one.
+
+🧠 Notes
+
+The bot’s role must be higher than the roles it assigns.
+(Move it to the top of your server’s role list.)
+
+Requires the Manage Roles permission.
+
+Roles that no longer exist are skipped automatically.
