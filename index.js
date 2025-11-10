@@ -144,7 +144,7 @@ client.on("interactionCreate", async (interaction) => {
       const botMember = await interaction.guild.members.fetch(client.user.id);
       if (!botMember.permissions.has(PermissionsBitField.Flags.ManageRoles)) {
         return interaction.update({
-          content: "❌ I need the **Manage Roles** permission to assign roles.",
+          content: "❌ Need the **Manage Roles** permission to assign roles.",
           components: [],
           ephemeral: true,
         });
@@ -153,7 +153,7 @@ client.on("interactionCreate", async (interaction) => {
       if (botMember.roles.highest.position <= selectedRole.position) {
         return interaction.update({
           content:
-            "⚠️ My role must be **higher** than the role you’re trying to assign.",
+            "⚠️ Role must be **higher** than the role you’re trying to assign.",
           components: [],
           ephemeral: true,
         });
