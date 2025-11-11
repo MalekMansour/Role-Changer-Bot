@@ -9,8 +9,6 @@ Only specific roles (defined by you) can be selected, and only certain users or 
 - Restricts access to certain users or roles (optional).  
 - Safe permission checks — the bot only changes roles it has access to.  
 
----
-
 ## Command Usage
 
 Once the bot is running:
