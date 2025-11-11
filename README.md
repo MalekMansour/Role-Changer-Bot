@@ -17,8 +17,6 @@ Once the bot is running:
 2. Select your desired role from the dropdown.  
 3. The bot will remove your previous role and add the new one.  
 
----
-
 ## Notes
 - The bot’s **role must be higher** than the roles it assigns.  
   *(Move it to the top of your server’s role list.)*  
