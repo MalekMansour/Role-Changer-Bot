@@ -22,5 +22,3 @@ Once the bot is running:
   *(Move it to the top of your server’s role list.)*  
 - Requires the **Manage Roles** permission.  
 - Roles that no longer exist are skipped automatically.  
-
----
